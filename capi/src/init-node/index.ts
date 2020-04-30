@@ -60,9 +60,9 @@ const highlight = (code: string, language: string): string => {
     languageIsSet ? `-${language}` : ""
   }">${highlighted}</div>`;
 
-  return `<amplify-code-block language="${language}" line-count="${String(
-    c.split(/\r\n|\r|\n/).length,
-  )}">${c}</amplify-code-block>`;
+  return `<amplify-code-block language="${language}" line-count="${
+    c.split(/\r\n|\r|\n/).length
+  }">${c}</amplify-code-block>`;
 };
 
 marked.setOptions({
